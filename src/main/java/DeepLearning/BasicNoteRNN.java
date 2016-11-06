@@ -215,6 +215,9 @@ public class BasicNoteRNN
 
 		newPart.addPhrase(newPhrase);
 
+		/**
+		 * Adds a new part
+		 */
 		newScore.add(newPart);
 
 		Write.midi(newScore, "autumnLeaves_test.mid");
@@ -264,6 +267,11 @@ public class BasicNoteRNN
 		return soloPhrase.getNoteArray();
 	}
 
+	/**
+	 * A method that returns the notes for a classical piece...the results vary because
+	 * this song has a LOT more background noise. 
+	 * @return
+	 */
 	private static Note[] getSolomonNotes()
 	{
 		Score newScore = new Score();
